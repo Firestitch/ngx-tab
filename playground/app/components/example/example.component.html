@@ -1,1 +1,5 @@
-<fs-component></fs-component>
+<nav mat-tab-nav-bar [backgroundColor]="background">
+  <a mat-tab-link *ngFor="let link of links"
+     (click)="activeLink = link"
+     [active]="activeLink == link"> {{link}} </a>
+</nav>
